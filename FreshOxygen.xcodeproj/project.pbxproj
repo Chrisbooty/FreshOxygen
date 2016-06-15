@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0411445E1D11372A008A57DB /* RecommandBtn+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411444F1D11372A008A57DB /* RecommandBtn+CoreDataProperties.m */; };
+		0411445F1D11372A008A57DB /* RecommandBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 041144511D11372A008A57DB /* RecommandBtn.m */; };
+		041144601D11372A008A57DB /* RecommandImages+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 041144531D11372A008A57DB /* RecommandImages+CoreDataProperties.m */; };
+		041144611D11372A008A57DB /* RecommandImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 041144551D11372A008A57DB /* RecommandImages.m */; };
+		041144621D11372A008A57DB /* RecommandMessage+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 041144571D11372A008A57DB /* RecommandMessage+CoreDataProperties.m */; };
+		041144631D11372A008A57DB /* RecommandMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 041144591D11372A008A57DB /* RecommandMessage.m */; };
+		041144641D11372A008A57DB /* RecommandScroll+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411445B1D11372A008A57DB /* RecommandScroll+CoreDataProperties.m */; };
+		041144651D11372A008A57DB /* RecommandScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411445D1D11372A008A57DB /* RecommandScroll.m */; };
+		041144691D114062008A57DB /* CJRecommandCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041144681D114062008A57DB /* CJRecommandCellModel.m */; };
+		0411446C1D114D62008A57DB /* CJRecommandSurgeryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411446B1D114D62008A57DB /* CJRecommandSurgeryModel.m */; };
 		04F7A5021D10075B005CD321 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7A5011D10075B005CD321 /* main.m */; };
 		04F7A5051D10075B005CD321 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7A5041D10075B005CD321 /* AppDelegate.m */; };
 		04F7A5081D10075B005CD321 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7A5071D10075B005CD321 /* ViewController.m */; };
@@ -31,6 +41,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041144391D112DFB008A57DB /* CJHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJHeader.h; sourceTree = "<group>"; };
+		0411444E1D11372A008A57DB /* RecommandBtn+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RecommandBtn+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0411444F1D11372A008A57DB /* RecommandBtn+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RecommandBtn+CoreDataProperties.m"; sourceTree = "<group>"; };
+		041144501D11372A008A57DB /* RecommandBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommandBtn.h; sourceTree = "<group>"; };
+		041144511D11372A008A57DB /* RecommandBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommandBtn.m; sourceTree = "<group>"; };
+		041144521D11372A008A57DB /* RecommandImages+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RecommandImages+CoreDataProperties.h"; sourceTree = "<group>"; };
+		041144531D11372A008A57DB /* RecommandImages+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RecommandImages+CoreDataProperties.m"; sourceTree = "<group>"; };
+		041144541D11372A008A57DB /* RecommandImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommandImages.h; sourceTree = "<group>"; };
+		041144551D11372A008A57DB /* RecommandImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommandImages.m; sourceTree = "<group>"; };
+		041144561D11372A008A57DB /* RecommandMessage+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RecommandMessage+CoreDataProperties.h"; sourceTree = "<group>"; };
+		041144571D11372A008A57DB /* RecommandMessage+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RecommandMessage+CoreDataProperties.m"; sourceTree = "<group>"; };
+		041144581D11372A008A57DB /* RecommandMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommandMessage.h; sourceTree = "<group>"; };
+		041144591D11372A008A57DB /* RecommandMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommandMessage.m; sourceTree = "<group>"; };
+		0411445A1D11372A008A57DB /* RecommandScroll+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RecommandScroll+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0411445B1D11372A008A57DB /* RecommandScroll+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RecommandScroll+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0411445C1D11372A008A57DB /* RecommandScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommandScroll.h; sourceTree = "<group>"; };
+		0411445D1D11372A008A57DB /* RecommandScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommandScroll.m; sourceTree = "<group>"; };
+		041144671D114062008A57DB /* CJRecommandCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJRecommandCellModel.h; sourceTree = "<group>"; };
+		041144681D114062008A57DB /* CJRecommandCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJRecommandCellModel.m; sourceTree = "<group>"; };
+		0411446A1D114D62008A57DB /* CJRecommandSurgeryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJRecommandSurgeryModel.h; sourceTree = "<group>"; };
+		0411446B1D114D62008A57DB /* CJRecommandSurgeryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJRecommandSurgeryModel.m; sourceTree = "<group>"; };
 		04F7A4FD1D10075B005CD321 /* FreshOxygen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshOxygen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F7A5011D10075B005CD321 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04F7A5031D10075B005CD321 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +103,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0411443A1D113057008A57DB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0411443B1D11305D008A57DB /* 推荐首页 */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		0411443B1D11305D008A57DB /* 推荐首页 */ = {
+			isa = PBXGroup;
+			children = (
+				0411444E1D11372A008A57DB /* RecommandBtn+CoreDataProperties.h */,
+				0411444F1D11372A008A57DB /* RecommandBtn+CoreDataProperties.m */,
+				041144501D11372A008A57DB /* RecommandBtn.h */,
+				041144511D11372A008A57DB /* RecommandBtn.m */,
+				041144521D11372A008A57DB /* RecommandImages+CoreDataProperties.h */,
+				041144531D11372A008A57DB /* RecommandImages+CoreDataProperties.m */,
+				041144541D11372A008A57DB /* RecommandImages.h */,
+				041144551D11372A008A57DB /* RecommandImages.m */,
+				041144561D11372A008A57DB /* RecommandMessage+CoreDataProperties.h */,
+				041144571D11372A008A57DB /* RecommandMessage+CoreDataProperties.m */,
+				041144581D11372A008A57DB /* RecommandMessage.h */,
+				041144591D11372A008A57DB /* RecommandMessage.m */,
+				0411445A1D11372A008A57DB /* RecommandScroll+CoreDataProperties.h */,
+				0411445B1D11372A008A57DB /* RecommandScroll+CoreDataProperties.m */,
+				0411445C1D11372A008A57DB /* RecommandScroll.h */,
+				0411445D1D11372A008A57DB /* RecommandScroll.m */,
+			);
+			name = "推荐首页";
+			sourceTree = "<group>";
+		};
+		041144661D114039008A57DB /* 推荐首页 */ = {
+			isa = PBXGroup;
+			children = (
+				041144671D114062008A57DB /* CJRecommandCellModel.h */,
+				041144681D114062008A57DB /* CJRecommandCellModel.m */,
+				0411446A1D114D62008A57DB /* CJRecommandSurgeryModel.h */,
+				0411446B1D114D62008A57DB /* CJRecommandSurgeryModel.m */,
+			);
+			name = "推荐首页";
+			sourceTree = "<group>";
+		};
+		0411446D1D115517008A57DB /* 推荐 */ = {
+			isa = PBXGroup;
+			children = (
+				0411446E1D11551F008A57DB /* 表头 */,
+				0411446F1D11552C008A57DB /* cell */,
+			);
+			name = "推荐";
+			sourceTree = "<group>";
+		};
+		0411446E1D11551F008A57DB /* 表头 */ = {
+			isa = PBXGroup;
+			children = (
+				04F7A52E1D101F9F005CD321 /* CJRecommandScrollView.h */,
+				04F7A52F1D101F9F005CD321 /* CJRecommandScrollView.m */,
+				04F7A5311D101FC7005CD321 /* CJRecommandScrollView.xib */,
+			);
+			name = "表头";
+			sourceTree = "<group>";
+		};
+		0411446F1D11552C008A57DB /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
 		04F7A4F41D10075A005CD321 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +226,7 @@
 			children = (
 				04F7A5031D10075B005CD321 /* AppDelegate.h */,
 				04F7A5041D10075B005CD321 /* AppDelegate.m */,
+				041144391D112DFB008A57DB /* CJHeader.h */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -134,9 +234,7 @@
 		04F7A5291D100772005CD321 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				04F7A52E1D101F9F005CD321 /* CJRecommandScrollView.h */,
-				04F7A52F1D101F9F005CD321 /* CJRecommandScrollView.m */,
-				04F7A5311D101FC7005CD321 /* CJRecommandScrollView.xib */,
+				0411446D1D115517008A57DB /* 推荐 */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -153,6 +251,8 @@
 		04F7A52B1D100781005CD321 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0411443A1D113057008A57DB /* CoreData */,
+				041144661D114039008A57DB /* 推荐首页 */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -348,9 +448,19 @@
 			files = (
 				04F7A5081D10075B005CD321 /* ViewController.m in Sources */,
 				04F7A5051D10075B005CD321 /* AppDelegate.m in Sources */,
+				041144611D11372A008A57DB /* RecommandImages.m in Sources */,
 				04F7A50E1D10075B005CD321 /* FreshOxygen.xcdatamodeld in Sources */,
 				04F7A5021D10075B005CD321 /* main.m in Sources */,
+				041144691D114062008A57DB /* CJRecommandCellModel.m in Sources */,
+				0411446C1D114D62008A57DB /* CJRecommandSurgeryModel.m in Sources */,
+				041144631D11372A008A57DB /* RecommandMessage.m in Sources */,
+				0411445F1D11372A008A57DB /* RecommandBtn.m in Sources */,
+				041144641D11372A008A57DB /* RecommandScroll+CoreDataProperties.m in Sources */,
+				041144651D11372A008A57DB /* RecommandScroll.m in Sources */,
+				041144621D11372A008A57DB /* RecommandMessage+CoreDataProperties.m in Sources */,
 				04F7A5301D101F9F005CD321 /* CJRecommandScrollView.m in Sources */,
+				041144601D11372A008A57DB /* RecommandImages+CoreDataProperties.m in Sources */,
+				0411445E1D11372A008A57DB /* RecommandBtn+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

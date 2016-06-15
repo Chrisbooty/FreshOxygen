@@ -8,8 +8,23 @@
 
 #import "ViewController.h"
 #import "CJRecommandScrollView.h"
+#import "CJHeader.h"
+
 
 @interface ViewController ()
+
+/** 下拉次数 */
+@property(nonatomic,assign) NSInteger count;
+/** 轮播图数据源 */
+@property(nonatomic,strong) NSMutableArray *scrollDataArrM;
+/** 按钮数据源 */
+@property(nonatomic,strong) NSMutableArray *btnDataArrM;
+/** 推广图片数据源 */
+@property(nonatomic,strong) NSMutableArray *imagesDataArrM;
+/** 广告消息模型 */
+@property(nonatomic,strong) RecommandMessage *messageModel;
+/** cell数据源 */
+@property(nonatomic,strong) NSMutableArray *cellDataArrM;
 
 @end
 
@@ -21,19 +36,83 @@
     
     CJRecommandScrollView *headerView = [[[NSBundle mainBundle] loadNibNamed:@"CJRecommandScrollView" owner:nil options:nil] lastObject];
     
-//    self.tableView.tableHeaderView =
+    self.tableView.tableHeaderView = headerView;
+
+}
+#pragma mark - 请求数据
+- (void)requestData
+{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager GET:[NSString stringWithFormat:RECOMMAND_URL,self.count] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        //轮播图数据源
+        NSArray *scrollArr = responseObject[@"responseData"][@"banner"];
+        for (NSDictionary *dict in scrollArr) {
+            RecommandScroll *scrollModel = [RecommandScroll recommandScrollWithDict:dict];
+            [self.scrollDataArrM addObject:scrollModel];
+        }
+        //按钮数据源
+        NSArray *btnArr = responseObject[@"responseData"][@"tool"];
+        for (NSDictionary *dict in btnArr) {
+            RecommandBtn *btnModel = [RecommandBtn recommandBtnWithDict:dict];
+            [self.btnDataArrM addObject:btnModel];
+        }
+        //加载推荐模型
+        NSArray *imgArr = responseObject[@"responseData"][@"wz_product"];
+        for (NSDictionary *dict in imgArr) {
+            RecommandImages *imgModel = [RecommandImages recommandImagesWithDict:dict];
+            [self.imagesDataArrM addObject:imgModel];
+        }
+        //广告模型
+        _messageModel = [RecommandMessage recommandMessageWithDict:responseObject[@"responseData"]];
+        //cell数据源
+        
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
 }
 
 
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//    
-//}
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    
-//}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 0;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return nil;
+}
 
+
+- (NSMutableArray *)scrollDataArrM
+{
+    if (_scrollDataArrM == nil) {
+        _scrollDataArrM = [NSMutableArray array];
+    }
+    return _scrollDataArrM;
+}
+
+-(NSMutableArray *)btnDataArrM
+{
+    if (_btnDataArrM == nil) {
+        _btnDataArrM = [NSMutableArray array];
+    }
+    return _btnDataArrM;
+}
+- (NSMutableArray *)imagesDataArrM
+{
+    if (_imagesDataArrM == nil) {
+        _imagesDataArrM = [NSMutableArray array];
+    }
+    return _imagesDataArrM;
+}
+- (NSMutableArray *)cellDataArrM
+{
+    if (_cellDataArrM == nil) {
+        _cellDataArrM = [NSMutableArray array];
+    }
+    return _cellDataArrM;
+}
 
 
 - (void)didReceiveMemoryWarning {

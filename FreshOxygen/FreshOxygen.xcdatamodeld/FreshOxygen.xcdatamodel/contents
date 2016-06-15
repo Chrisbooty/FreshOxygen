@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15F34" minimumToolsVersion="Automatic">
-    <entity name="RecommandBtn" syncable="YES">
+    <entity name="RecommandBtn" representedClassName="RecommandBtn" syncable="YES">
         <attribute name="img" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="RecommandImages" syncable="YES">
-        <attribute name="con" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
+    <entity name="RecommandImages" representedClassName="RecommandImages" syncable="YES">
         <attribute name="img" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="notice" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="RecommandScroll" syncable="YES">
+    <entity name="RecommandMessage" representedClassName="RecommandMessage" syncable="YES">
+        <attribute name="con" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notice" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <entity name="RecommandScroll" representedClassName="RecommandScroll" syncable="YES">
         <attribute name="con" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="u" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="RecommandScroll" positionX="-63" positionY="-18" width="128" height="90"/>
         <element name="RecommandBtn" positionX="-54" positionY="-9" width="128" height="75"/>
-        <element name="RecommandImages" positionX="-36" positionY="9" width="128" height="120"/>
+        <element name="RecommandImages" positionX="-36" positionY="9" width="128" height="75"/>
+        <element name="RecommandScroll" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="RecommandMessage" positionX="-45" positionY="9" width="128" height="90"/>
     </elements>
 </model>
