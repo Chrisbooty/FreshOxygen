@@ -60,11 +60,13 @@
     NSInteger i = 0;
     for (UIView *view in _btnView.subviews) {
         if ([view isKindOfClass:[CJRecommandBtnView class]]) {
-            CJRecommandBtnView *btnview = (CJRecommandBtnView *)view;
-            RecommandBtn *btnModel = btnDataArrM[i];
-            UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(btnClick:)];
-            [btnview addGestureRecognizer:tap];
-            btnview.model = btnModel;
+            if (btnDataArrM.count) {
+                CJRecommandBtnView *btnview = (CJRecommandBtnView *)view;
+                RecommandBtn *btnModel = btnDataArrM[i];
+                UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(btnClick:)];
+                [btnview addGestureRecognizer:tap];
+                btnview.model = btnModel;
+            }
         }
     }
 }
@@ -109,11 +111,13 @@
 - (void)setMessageModel:(RecommandMessage *)messageModel
 {
     _messageModel = messageModel;
-    [_labelImageView sd_setImageWithURL:[NSURL URLWithString:messageModel.icon] placeholderImage:[UIImage imageNamed:@"photo"]];
-    
-    //滚动文字
-    NSArray *arr = [NSJSONSerialization JSONObjectWithData:messageModel.notice options:NSJSONReadingMutableContainers error:nil];
-    _textL.text = arr.lastObject;
+    if (messageModel !=nil) {
+        [_labelImageView sd_setImageWithURL:[NSURL URLWithString:messageModel.icon] placeholderImage:[UIImage imageNamed:@"photo"]];
+        
+        //滚动文字
+        NSArray *arr = [NSJSONSerialization JSONObjectWithData:messageModel.notice options:NSJSONReadingMutableContainers error:nil];
+        _textL.text = arr.lastObject;
+    }
 }
 
 #pragma mark - 计时器

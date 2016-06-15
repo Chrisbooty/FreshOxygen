@@ -33,11 +33,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    [self requestData];
     CJRecommandScrollView *headerView = [[[NSBundle mainBundle] loadNibNamed:@"CJRecommandScrollView" owner:nil options:nil] lastObject];
-    
+    headerView.scrollDataArrM = self.scrollDataArrM;
+    headerView.imagesDataArrM = self.imagesDataArrM;
+    headerView.btnDataArrM = self.btnDataArrM;
+    headerView.messageModel = self.messageModel;
     self.tableView.tableHeaderView = headerView;
     [self.tableView registerNib:[UINib nibWithNibName:@"CJRecommandCustomTableCell" bundle:nil] forCellReuseIdentifier:@"CJRecommandCustomTableCell"];
+    
 
 }
 #pragma mark - 请求数据
