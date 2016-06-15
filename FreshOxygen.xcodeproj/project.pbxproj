@@ -15,6 +15,9 @@
 		04F7A5101D10075B005CD321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F7A50F1D10075B005CD321 /* Assets.xcassets */; };
 		04F7A5131D10075B005CD321 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F7A5111D10075B005CD321 /* LaunchScreen.storyboard */; };
 		04F7A51E1D10075B005CD321 /* FreshOxygenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7A51D1D10075B005CD321 /* FreshOxygenTests.m */; };
+		04F7A5301D101F9F005CD321 /* CJRecommandScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7A52F1D101F9F005CD321 /* CJRecommandScrollView.m */; };
+		04F7A5321D101FC7005CD321 /* CJRecommandScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F7A5311D101FC7005CD321 /* CJRecommandScrollView.xib */; };
+		BD2BC459E4EE74A859C2C392 /* libPods-FreshOxygen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 866EC5CC5873624BF83C2FA5 /* libPods-FreshOxygen.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,12 @@
 		04F7A5191D10075B005CD321 /* FreshOxygenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreshOxygenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F7A51D1D10075B005CD321 /* FreshOxygenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreshOxygenTests.m; sourceTree = "<group>"; };
 		04F7A51F1D10075B005CD321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F7A52E1D101F9F005CD321 /* CJRecommandScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJRecommandScrollView.h; sourceTree = "<group>"; };
+		04F7A52F1D101F9F005CD321 /* CJRecommandScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJRecommandScrollView.m; sourceTree = "<group>"; };
+		04F7A5311D101FC7005CD321 /* CJRecommandScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CJRecommandScrollView.xib; sourceTree = "<group>"; };
+		2E08BC170A29BA49762B8A7A /* Pods-FreshOxygen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreshOxygen.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreshOxygen/Pods-FreshOxygen.release.xcconfig"; sourceTree = "<group>"; };
+		866EC5CC5873624BF83C2FA5 /* libPods-FreshOxygen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FreshOxygen.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA04CEBE699483058A177554 /* Pods-FreshOxygen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreshOxygen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreshOxygen/Pods-FreshOxygen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD2BC459E4EE74A859C2C392 /* libPods-FreshOxygen.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +78,8 @@
 				04F7A4FF1D10075B005CD321 /* FreshOxygen */,
 				04F7A51C1D10075B005CD321 /* FreshOxygenTests */,
 				04F7A4FE1D10075B005CD321 /* Products */,
+				7DE684852AA38C09E275D644 /* Pods */,
+				8080B51CAA6408815B29A6C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,15 +95,7 @@
 		04F7A4FF1D10075B005CD321 /* FreshOxygen */ = {
 			isa = PBXGroup;
 			children = (
-				04F7A5031D10075B005CD321 /* AppDelegate.h */,
-				04F7A5041D10075B005CD321 /* AppDelegate.m */,
-				04F7A5061D10075B005CD321 /* ViewController.h */,
-				04F7A5071D10075B005CD321 /* ViewController.m */,
-				04F7A5091D10075B005CD321 /* Main.storyboard */,
-				04F7A50F1D10075B005CD321 /* Assets.xcassets */,
-				04F7A5111D10075B005CD321 /* LaunchScreen.storyboard */,
-				04F7A5141D10075B005CD321 /* Info.plist */,
-				04F7A50C1D10075B005CD321 /* FreshOxygen.xcdatamodeld */,
+				04F7A52D1D1007A1005CD321 /* Class */,
 				04F7A5001D10075B005CD321 /* Supporting Files */,
 			);
 			path = FreshOxygen;
@@ -100,6 +104,10 @@
 		04F7A5001D10075B005CD321 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04F7A50F1D10075B005CD321 /* Assets.xcassets */,
+				04F7A5111D10075B005CD321 /* LaunchScreen.storyboard */,
+				04F7A5141D10075B005CD321 /* Info.plist */,
+				04F7A50C1D10075B005CD321 /* FreshOxygen.xcdatamodeld */,
 				04F7A5011D10075B005CD321 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -114,6 +122,78 @@
 			path = FreshOxygenTests;
 			sourceTree = "<group>";
 		};
+		04F7A5281D10076C005CD321 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				04F7A5031D10075B005CD321 /* AppDelegate.h */,
+				04F7A5041D10075B005CD321 /* AppDelegate.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		04F7A5291D100772005CD321 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04F7A52E1D101F9F005CD321 /* CJRecommandScrollView.h */,
+				04F7A52F1D101F9F005CD321 /* CJRecommandScrollView.m */,
+				04F7A5311D101FC7005CD321 /* CJRecommandScrollView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		04F7A52A1D100777005CD321 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04F7A5061D10075B005CD321 /* ViewController.h */,
+				04F7A5071D10075B005CD321 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		04F7A52B1D100781005CD321 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		04F7A52C1D100786005CD321 /* Thrid */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Thrid;
+			sourceTree = "<group>";
+		};
+		04F7A52D1D1007A1005CD321 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				04F7A5091D10075B005CD321 /* Main.storyboard */,
+				04F7A52A1D100777005CD321 /* Controller */,
+				04F7A5291D100772005CD321 /* View */,
+				04F7A52B1D100781005CD321 /* Model */,
+				04F7A5281D10076C005CD321 /* Other */,
+				04F7A52C1D100786005CD321 /* Thrid */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		7DE684852AA38C09E275D644 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA04CEBE699483058A177554 /* Pods-FreshOxygen.debug.xcconfig */,
+				2E08BC170A29BA49762B8A7A /* Pods-FreshOxygen.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8080B51CAA6408815B29A6C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				866EC5CC5873624BF83C2FA5 /* libPods-FreshOxygen.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04F7A5221D10075B005CD321 /* Build configuration list for PBXNativeTarget "FreshOxygen" */;
 			buildPhases = (
+				688AF7B6469BA72BF0D5B800 /* [CP] Check Pods Manifest.lock */,
 				04F7A4F91D10075B005CD321 /* Sources */,
 				04F7A4FA1D10075B005CD321 /* Frameworks */,
 				04F7A4FB1D10075B005CD321 /* Resources */,
+				6B0AABD6AAE6486E585F2722 /* [CP] Embed Pods Frameworks */,
+				619639F34F8821DBB067B5D7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,6 +280,7 @@
 				04F7A5131D10075B005CD321 /* LaunchScreen.storyboard in Resources */,
 				04F7A5101D10075B005CD321 /* Assets.xcassets in Resources */,
 				04F7A50B1D10075B005CD321 /* Main.storyboard in Resources */,
+				04F7A5321D101FC7005CD321 /* CJRecommandScrollView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +293,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		619639F34F8821DBB067B5D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreshOxygen/Pods-FreshOxygen-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		688AF7B6469BA72BF0D5B800 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6B0AABD6AAE6486E585F2722 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreshOxygen/Pods-FreshOxygen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04F7A4F91D10075B005CD321 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -218,6 +350,7 @@
 				04F7A5051D10075B005CD321 /* AppDelegate.m in Sources */,
 				04F7A50E1D10075B005CD321 /* FreshOxygen.xcdatamodeld in Sources */,
 				04F7A5021D10075B005CD321 /* main.m in Sources */,
+				04F7A5301D101F9F005CD321 /* CJRecommandScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +476,7 @@
 		};
 		04F7A5231D10075B005CD321 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA04CEBE699483058A177554 /* Pods-FreshOxygen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FreshOxygen/Info.plist;
@@ -354,6 +488,7 @@
 		};
 		04F7A5241D10075B005CD321 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E08BC170A29BA49762B8A7A /* Pods-FreshOxygen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FreshOxygen/Info.plist;
@@ -406,6 +541,7 @@
 				04F7A5241D10075B005CD321 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04F7A5251D10075B005CD321 /* Build configuration list for PBXNativeTarget "FreshOxygenTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +550,7 @@
 				04F7A5271D10075B005CD321 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

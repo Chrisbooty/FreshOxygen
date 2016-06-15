@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CJRecommandScrollView.h
 //  FreshOxygen
 //
 //  Created by mac on 16/6/14.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
+@interface CJRecommandScrollView : UIView
 
+/** 数据源 */
+@property(nonatomic,strong) NSDictionary *dict;
 
 @end
-
