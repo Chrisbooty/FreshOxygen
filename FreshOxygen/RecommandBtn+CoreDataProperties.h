@@ -22,7 +22,10 @@ NS_ASSUME_NONNULL_BEGIN
  *  按钮名
  */
 @property (nullable, nonatomic, retain) NSString *name;
-
+/**
+ *  类型
+ */
+@property (nullable, nonatomic, retain) NSString *type;
 @end
 
 NS_ASSUME_NONNULL_END

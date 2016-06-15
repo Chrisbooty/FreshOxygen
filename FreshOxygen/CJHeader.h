@@ -22,6 +22,9 @@
 #import "RecommandImages.h"
 #import "RecommandScroll.h"
 #import "RecommandMessage.h"
+#import "CJRecommandCellModel.h"
+#import "CJRecommandCustomTableCell.h"
+#import "CJRecommandGOVTableCell.h"
 
 #define RECOMMAND_URL @"http://api.soyoung.com/v4/appindex?index=%ld&range=20&cityId=291&lver=6.3.8"
 

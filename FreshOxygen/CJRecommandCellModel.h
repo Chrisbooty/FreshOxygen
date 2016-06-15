@@ -17,8 +17,8 @@
 @property(nonatomic,copy) NSString *uid;
 /** 用户等级 */
 @property(nonatomic,copy) NSString *user_level;
-/** 等级图标 */
-@property(nonatomic,copy) NSString *certified_id;
+/** 等级 */
+@property(nonatomic,copy) NSString *certified_type;
 /** 用户名 */
 @property(nonatomic,copy) NSString *user_name;
 /** 图片左 */
@@ -27,6 +27,7 @@
 @property(nonatomic,copy) NSString *middle_img_u;
 /** 描述内容 */
 @property(nonatomic,copy) NSString *summary;
+
 
 
 /** 手术 */

@@ -17,6 +17,12 @@
 		041144651D11372A008A57DB /* RecommandScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411445D1D11372A008A57DB /* RecommandScroll.m */; };
 		041144691D114062008A57DB /* CJRecommandCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041144681D114062008A57DB /* CJRecommandCellModel.m */; };
 		0411446C1D114D62008A57DB /* CJRecommandSurgeryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0411446B1D114D62008A57DB /* CJRecommandSurgeryModel.m */; };
+		041144751D1156C9008A57DB /* CJRecommandCustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 041144731D1156C9008A57DB /* CJRecommandCustomTableCell.m */; };
+		041144761D1156C9008A57DB /* CJRecommandCustomTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041144741D1156C9008A57DB /* CJRecommandCustomTableCell.xib */; };
+		0411447A1D115717008A57DB /* CJRecommandGOVTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 041144781D115717008A57DB /* CJRecommandGOVTableCell.m */; };
+		0411447B1D115717008A57DB /* CJRecommandGOVTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041144791D115717008A57DB /* CJRecommandGOVTableCell.xib */; };
+		0411447D1D117056008A57DB /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0411447C1D117056008A57DB /* photo.png */; };
+		04114C291D11896C008A57DB /* CJRecommandBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04114C281D11896C008A57DB /* CJRecommandBtnView.m */; };
 		04F7A5021D10075B005CD321 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7A5011D10075B005CD321 /* main.m */; };
 		04F7A5051D10075B005CD321 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7A5041D10075B005CD321 /* AppDelegate.m */; };
 		04F7A5081D10075B005CD321 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7A5071D10075B005CD321 /* ViewController.m */; };
@@ -62,6 +68,15 @@
 		041144681D114062008A57DB /* CJRecommandCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJRecommandCellModel.m; sourceTree = "<group>"; };
 		0411446A1D114D62008A57DB /* CJRecommandSurgeryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJRecommandSurgeryModel.h; sourceTree = "<group>"; };
 		0411446B1D114D62008A57DB /* CJRecommandSurgeryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJRecommandSurgeryModel.m; sourceTree = "<group>"; };
+		041144721D1156C9008A57DB /* CJRecommandCustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJRecommandCustomTableCell.h; sourceTree = "<group>"; };
+		041144731D1156C9008A57DB /* CJRecommandCustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJRecommandCustomTableCell.m; sourceTree = "<group>"; };
+		041144741D1156C9008A57DB /* CJRecommandCustomTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CJRecommandCustomTableCell.xib; sourceTree = "<group>"; };
+		041144771D115717008A57DB /* CJRecommandGOVTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJRecommandGOVTableCell.h; sourceTree = "<group>"; };
+		041144781D115717008A57DB /* CJRecommandGOVTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJRecommandGOVTableCell.m; sourceTree = "<group>"; };
+		041144791D115717008A57DB /* CJRecommandGOVTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CJRecommandGOVTableCell.xib; sourceTree = "<group>"; };
+		0411447C1D117056008A57DB /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
+		04114C271D11896C008A57DB /* CJRecommandBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJRecommandBtnView.h; sourceTree = "<group>"; };
+		04114C281D11896C008A57DB /* CJRecommandBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJRecommandBtnView.m; sourceTree = "<group>"; };
 		04F7A4FD1D10075B005CD321 /* FreshOxygen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshOxygen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F7A5011D10075B005CD321 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04F7A5031D10075B005CD321 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -157,6 +172,7 @@
 		0411446E1D11551F008A57DB /* 表头 */ = {
 			isa = PBXGroup;
 			children = (
+				04114C261D11894E008A57DB /* 按钮 */,
 				04F7A52E1D101F9F005CD321 /* CJRecommandScrollView.h */,
 				04F7A52F1D101F9F005CD321 /* CJRecommandScrollView.m */,
 				04F7A5311D101FC7005CD321 /* CJRecommandScrollView.xib */,
@@ -167,8 +183,39 @@
 		0411446F1D11552C008A57DB /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				041144711D115645008A57DB /* 用户 */,
+				041144701D115634008A57DB /* 官方 */,
 			);
 			name = cell;
+			sourceTree = "<group>";
+		};
+		041144701D115634008A57DB /* 官方 */ = {
+			isa = PBXGroup;
+			children = (
+				041144771D115717008A57DB /* CJRecommandGOVTableCell.h */,
+				041144781D115717008A57DB /* CJRecommandGOVTableCell.m */,
+				041144791D115717008A57DB /* CJRecommandGOVTableCell.xib */,
+			);
+			name = "官方";
+			sourceTree = "<group>";
+		};
+		041144711D115645008A57DB /* 用户 */ = {
+			isa = PBXGroup;
+			children = (
+				041144721D1156C9008A57DB /* CJRecommandCustomTableCell.h */,
+				041144731D1156C9008A57DB /* CJRecommandCustomTableCell.m */,
+				041144741D1156C9008A57DB /* CJRecommandCustomTableCell.xib */,
+			);
+			name = "用户";
+			sourceTree = "<group>";
+		};
+		04114C261D11894E008A57DB /* 按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				04114C271D11896C008A57DB /* CJRecommandBtnView.h */,
+				04114C281D11896C008A57DB /* CJRecommandBtnView.m */,
+			);
+			name = "按钮";
 			sourceTree = "<group>";
 		};
 		04F7A4F41D10075A005CD321 = {
@@ -204,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				04F7A50F1D10075B005CD321 /* Assets.xcassets */,
+				0411447C1D117056008A57DB /* photo.png */,
 				04F7A5111D10075B005CD321 /* LaunchScreen.storyboard */,
 				04F7A5141D10075B005CD321 /* Info.plist */,
 				04F7A50C1D10075B005CD321 /* FreshOxygen.xcdatamodeld */,
@@ -377,6 +425,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0411447D1D117056008A57DB /* photo.png in Resources */,
+				041144761D1156C9008A57DB /* CJRecommandCustomTableCell.xib in Resources */,
+				0411447B1D115717008A57DB /* CJRecommandGOVTableCell.xib in Resources */,
 				04F7A5131D10075B005CD321 /* LaunchScreen.storyboard in Resources */,
 				04F7A5101D10075B005CD321 /* Assets.xcassets in Resources */,
 				04F7A50B1D10075B005CD321 /* Main.storyboard in Resources */,
@@ -449,6 +500,7 @@
 				04F7A5081D10075B005CD321 /* ViewController.m in Sources */,
 				04F7A5051D10075B005CD321 /* AppDelegate.m in Sources */,
 				041144611D11372A008A57DB /* RecommandImages.m in Sources */,
+				04114C291D11896C008A57DB /* CJRecommandBtnView.m in Sources */,
 				04F7A50E1D10075B005CD321 /* FreshOxygen.xcdatamodeld in Sources */,
 				04F7A5021D10075B005CD321 /* main.m in Sources */,
 				041144691D114062008A57DB /* CJRecommandCellModel.m in Sources */,
@@ -458,7 +510,9 @@
 				041144641D11372A008A57DB /* RecommandScroll+CoreDataProperties.m in Sources */,
 				041144651D11372A008A57DB /* RecommandScroll.m in Sources */,
 				041144621D11372A008A57DB /* RecommandMessage+CoreDataProperties.m in Sources */,
+				0411447A1D115717008A57DB /* CJRecommandGOVTableCell.m in Sources */,
 				04F7A5301D101F9F005CD321 /* CJRecommandScrollView.m in Sources */,
+				041144751D1156C9008A57DB /* CJRecommandCustomTableCell.m in Sources */,
 				041144601D11372A008A57DB /* RecommandImages+CoreDataProperties.m in Sources */,
 				0411445E1D11372A008A57DB /* RecommandBtn+CoreDataProperties.m in Sources */,
 			);

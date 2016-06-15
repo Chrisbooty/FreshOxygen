@@ -7,10 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RecommandMessage.h"
 
 @interface CJRecommandScrollView : UIView
 
-/** 数据源 */
-@property(nonatomic,strong) NSDictionary *dict;
+/** 轮播图数据源 */
+@property(nonatomic,strong) NSMutableArray *scrollDataArrM;
+/** 按钮数据源 */
+@property(nonatomic,strong) NSMutableArray *btnDataArrM;
+/** 推广图片数据源 */
+@property(nonatomic,strong) NSMutableArray *imagesDataArrM;
+/** 广告消息模型 */
+@property(nonatomic,strong) RecommandMessage *messageModel;
 
 @end

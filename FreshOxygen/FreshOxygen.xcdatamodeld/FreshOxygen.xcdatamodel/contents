@@ -3,6 +3,7 @@
     <entity name="RecommandBtn" representedClassName="RecommandBtn" syncable="YES">
         <attribute name="img" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="RecommandImages" representedClassName="RecommandImages" syncable="YES">
         <attribute name="img" optional="YES" attributeType="String" syncable="YES"/>
@@ -19,7 +20,7 @@
         <attribute name="u" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="RecommandBtn" positionX="-54" positionY="-9" width="128" height="75"/>
+        <element name="RecommandBtn" positionX="-54" positionY="-9" width="128" height="90"/>
         <element name="RecommandImages" positionX="-36" positionY="9" width="128" height="75"/>
         <element name="RecommandScroll" positionX="-63" positionY="-18" width="128" height="90"/>
         <element name="RecommandMessage" positionX="-45" positionY="9" width="128" height="90"/>

@@ -37,6 +37,7 @@
     CJRecommandScrollView *headerView = [[[NSBundle mainBundle] loadNibNamed:@"CJRecommandScrollView" owner:nil options:nil] lastObject];
     
     self.tableView.tableHeaderView = headerView;
+    [self.tableView registerNib:[UINib nibWithNibName:@"CJRecommandCustomTableCell" bundle:nil] forCellReuseIdentifier:@"CJRecommandCustomTableCell"];
 
 }
 #pragma mark - 请求数据
@@ -66,7 +67,12 @@
         //广告模型
         _messageModel = [RecommandMessage recommandMessageWithDict:responseObject[@"responseData"]];
         //cell数据源
-        
+        NSArray *cellArr = responseObject[@"responseData"][@"feed"];
+        for (NSDictionary *dict in cellArr) {
+            CJRecommandCellModel *model = [[CJRecommandCellModel alloc] initWithDictionary:dict error:nil];
+            [self.cellDataArrM addObject:model];
+        }
+        [self.tableView reloadData];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
@@ -76,10 +82,16 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return self.cellDataArrM.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    CJRecommandCellModel *model = self.cellDataArrM[indexPath.row];
+    if (model.certified_type.intValue == 0) {
+        CJRecommandCustomTableCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CJRecommandCustomTableCell"];
+        cell.model = model;
+        return cell;
+    }
     return nil;
 }
 

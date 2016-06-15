@@ -15,5 +15,6 @@
 
 @dynamic img;
 @dynamic name;
+@dynamic type;
 
 @end
