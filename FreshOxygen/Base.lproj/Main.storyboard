@@ -35,7 +35,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ob7-Ll-pLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2021" y="244"/>
+            <point key="canvasLocation" x="1695" y="221"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="s32-fd-gFD">
@@ -45,7 +45,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="y8T-4G-b8O">
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="HnN-1b-gus" kind="relationship" relationship="viewControllers" id="zkn-VB-jfl"/>
@@ -59,7 +59,9 @@
         <scene sceneID="E7e-gp-nTz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HnN-1b-gus" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="6vp-0w-tZR"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="6vp-0w-tZR">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7q6-Jl-CEh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -73,7 +75,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFe-bS-Tw5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1209" y="244"/>
+            <point key="canvasLocation" x="1050" y="232"/>
         </scene>
     </scenes>
 </document>

@@ -73,8 +73,8 @@
     _userNameL.text = model.user_name;
     _userGradeView.image = [UIImage imageNamed:[NSString stringWithFormat:@"experienceLevel_%@_13x13_",model.user_level]];
     _attentionL.text = @"关注";
-    [_imgLeftView sd_setImageWithURL:[NSURL URLWithString:model.top_img_u] placeholderImage:[UIImage imageNamed:@"photo"]];
-    [_imgRightView sd_setImageWithURL:[NSURL URLWithString:model.middle_img_u] placeholderImage:[UIImage imageNamed:@"photo"]];
+    [_imgLeftView sd_setImageWithURL:[NSURL URLWithString:model.middle_img_un] placeholderImage:[UIImage imageNamed:@"photo"]];
+    [_imgRightView sd_setImageWithURL:[NSURL URLWithString:model.top_img_un] placeholderImage:[UIImage imageNamed:@"photo"]];
     
     //判断是否为富文本
     
@@ -110,12 +110,7 @@
         }];
         _textL.attributedText = attri;
     }
-    
-    
-    
-    
-    
-    
+
     //删除item
     for (UIButton *btn in _labelView.subviews) {
         if ([btn isKindOfClass:[UIButton class]]) {
@@ -124,12 +119,12 @@
     }
     //间隔
     CGFloat spacing = 5;
-    CGFloat btnWith = 0;
+    CGFloat btnWith = 15;
     for (NSInteger i = 0; i <model.item.count; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         NSString *str = [model.item[i] item_name];
         CGSize strSize = [str sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12]}];
-        btn.frame = CGRectMake(btnWith +spacing, 0, strSize.width, strSize.height);
+        btn.frame = CGRectMake(btnWith + spacing, 0, strSize.width, strSize.height);
         [btn setTitle: str forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor colorWithRed:79.0/255.0 green:207/255.0 blue:199/255.0 alpha:1.0] forState:UIControlStateNormal];
         btn.titleLabel.font = [UIFont systemFontOfSize:12];

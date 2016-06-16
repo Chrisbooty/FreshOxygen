@@ -22,9 +22,9 @@
 /** 用户名 */
 @property(nonatomic,copy) NSString *user_name;
 /** 图片左 */
-@property(nonatomic,copy) NSString<Optional> *top_img_u;
+@property(nonatomic,copy) NSString<Optional> *top_img_un;
 /** 图片右 */
-@property(nonatomic,copy) NSString<Optional> *middle_img_u;
+@property(nonatomic,copy) NSString<Optional> *middle_img_un;
 /** 描述内容 */
 @property(nonatomic,copy) NSString<Optional> *summary;
 
@@ -45,5 +45,7 @@
 @property(nonatomic,copy) NSString<Optional> *group_id;
 /** 底部评论id */
 @property(nonatomic,copy) NSString<Optional> *post_id;
+
+
 
 @end

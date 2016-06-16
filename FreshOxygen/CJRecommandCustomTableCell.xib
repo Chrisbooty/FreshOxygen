@@ -116,10 +116,22 @@
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8MF-Ya-6oe">
                         <rect key="frame" x="8" y="313" width="359" height="22"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_page_Label_16x16_" translatesAutoresizingMaskIntoConstraints="NO" id="abS-P5-yAt">
+                                <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="BSN-x5-OWy"/>
+                                    <constraint firstAttribute="height" constant="15" id="ITw-zC-xQU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="abS-P5-yAt" firstAttribute="leading" secondItem="8MF-Ya-6oe" secondAttribute="leading" id="Pi4-r1-pdq"/>
                             <constraint firstAttribute="height" constant="22" id="Uog-am-Bjj"/>
+                            <constraint firstItem="abS-P5-yAt" firstAttribute="top" secondItem="8MF-Ya-6oe" secondAttribute="top" id="rwa-dW-RI3"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4du-b6-Lcr">
@@ -237,6 +249,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="Home_page_Label_16x16_" width="16" height="16"/>
         <image name="diary_common_14x14_" width="14" height="14"/>
         <image name="diary_see_14x14_" width="14" height="14"/>
         <image name="diary_star_off_14x14_" width="14" height="14"/>

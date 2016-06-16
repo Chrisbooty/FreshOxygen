@@ -29,7 +29,6 @@
 /** 记录轮播索引 */
 @property(nonatomic,assign) NSInteger index;
 
-
 @end
 
 @implementation CJRecommandScrollView
@@ -52,6 +51,7 @@
         [_scrollView addSubview:imgView];
     }
     _timer = [NSTimer scheduledTimerWithTimeInterval:2.0f target:self selector:@selector(timerAction) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
 }
 #pragma mark - 设置按钮
 - (void)setBtnDataArrM:(NSMutableArray *)btnDataArrM

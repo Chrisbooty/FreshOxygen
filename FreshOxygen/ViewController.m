@@ -30,9 +30,19 @@
 
 @implementation ViewController
 
+- (void)awakeFromNib
+{
+    //自定义tabbar
+    self.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0);
+    self.tabBarItem.selectedImage = [[UIImage imageNamed:@"homepage_homepage_selected_37x39_"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.tabBarItem.image = [[UIImage imageNamed:@"homepage_homepage_37x39_"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
     
     
     [self.tableView registerNib:[UINib nibWithNibName:@"CJRecommandCustomTableCell" bundle:nil] forCellReuseIdentifier:@"CJRecommandCustomTableCell"];
@@ -76,7 +86,7 @@
              *  测试
              */
             
-            if ([dict[@"certified_type"] integerValue] == 0) {
+            if ([dict[@"certified_type"] integerValue] == 0 && dict[@"top"] != nil) {
                 CJRecommandCellModel *model = [[CJRecommandCellModel alloc] initWithDictionary:dict error:nil];
                 [self.cellDataArrM addObject:model];
             }
@@ -108,7 +118,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CJRecommandCellModel *model = self.cellDataArrM[indexPath.row];
-    if (model.certified_type.intValue == 0) {
+    if (model.certified_type.intValue == 0 ) {
         CJRecommandCustomTableCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CJRecommandCustomTableCell"];
         cell.model = model;
         return cell;

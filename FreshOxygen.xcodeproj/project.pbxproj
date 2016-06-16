@@ -224,6 +224,15 @@
 			name = "按钮";
 			sourceTree = "<group>";
 		};
+		0495E5F71D12A75B001D4E79 /* 首页推荐 */ = {
+			isa = PBXGroup;
+			children = (
+				04F7A5061D10075B005CD321 /* ViewController.h */,
+				04F7A5071D10075B005CD321 /* ViewController.m */,
+			);
+			name = "首页推荐";
+			sourceTree = "<group>";
+		};
 		04F7A4F41D10075A005CD321 = {
 			isa = PBXGroup;
 			children = (
@@ -300,8 +309,7 @@
 		04F7A52A1D100777005CD321 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				04F7A5061D10075B005CD321 /* ViewController.h */,
-				04F7A5071D10075B005CD321 /* ViewController.m */,
+				0495E5F71D12A75B001D4E79 /* 首页推荐 */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
