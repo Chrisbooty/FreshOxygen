@@ -20,7 +20,7 @@
 }
 - (instancetype)initWithDict:(NSDictionary *)dict
 {
-    self = [super initWithEntity:self insertIntoManagedObjectContext:[CJTool sharedTool]];
+    self = [super initWithEntity:[NSEntityDescription entityForName:@"RecommandScroll" inManagedObjectContext:[CJTool sharedTool].context] insertIntoManagedObjectContext:[CJTool sharedTool].context];
     if (self) {
         NSArray *scrollProArr = [NSArray getProperties:[RecommandScroll class]];
         for (NSString *key in scrollProArr) {

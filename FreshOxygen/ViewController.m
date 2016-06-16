@@ -71,8 +71,16 @@
         //cell数据源
         NSArray *cellArr = responseObject[@"responseData"][@"feed"];
         for (NSDictionary *dict in cellArr) {
-            CJRecommandCellModel *model = [[CJRecommandCellModel alloc] initWithDictionary:dict error:nil];
-            [self.cellDataArrM addObject:model];
+            
+            /**
+             *  测试
+             */
+            
+            if ([dict[@"certified_type"] integerValue] == 0) {
+                CJRecommandCellModel *model = [[CJRecommandCellModel alloc] initWithDictionary:dict error:nil];
+                [self.cellDataArrM addObject:model];
+            }
+            
         }
         [self createTopView];
         [self.tableView reloadData];
@@ -106,6 +114,12 @@
         return cell;
     }
     return nil;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CJRecommandCustomTableCell *cell =  (CJRecommandCustomTableCell*)[self tableView:tableView cellForRowAtIndexPath:indexPath];
+    return cell.contentView.frame.size.height;
 }
 
 

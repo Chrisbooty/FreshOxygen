@@ -7,6 +7,7 @@
 //
 
 #import "RecommandBtn.h"
+#import "CJTool.h"
 #import "NSArray+Extension.h"
 
 @implementation RecommandBtn
@@ -19,7 +20,7 @@
 }
 - (instancetype)initWithDict:(NSDictionary *)dict
 {
-    self = [super init];
+    self = [super initWithEntity:[NSEntityDescription entityForName:@"RecommandBtn" inManagedObjectContext:[CJTool sharedTool].context] insertIntoManagedObjectContext:[CJTool sharedTool].context];
     if (self ) {
         NSArray *scrollProArr = [NSArray getProperties:[RecommandBtn class]];
         for (NSString *key in scrollProArr) {

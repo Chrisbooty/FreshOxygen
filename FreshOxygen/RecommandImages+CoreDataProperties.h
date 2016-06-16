@@ -2,7 +2,7 @@
 //  RecommandImages+CoreDataProperties.h
 //  FreshOxygen
 //
-//  Created by mac on 16/6/15.
+//  Created by mac on 16/6/16.
 //  Copyright © 2016年 Cijian.Wu. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu

@@ -10,9 +10,9 @@
 #import "CJHeader.h"
 
 @interface CJTool : NSObject
-{
-    NSManagedObjectContext *_context;
-}
+
+/** managedContext */
+@property(nonatomic,strong) NSManagedObjectContext *context;
 
 + (instancetype)sharedTool;
 

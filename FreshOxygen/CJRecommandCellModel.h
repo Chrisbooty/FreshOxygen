@@ -22,11 +22,11 @@
 /** 用户名 */
 @property(nonatomic,copy) NSString *user_name;
 /** 图片左 */
-@property(nonatomic,copy) NSString *top_img_u;
+@property(nonatomic,copy) NSString<Optional> *top_img_u;
 /** 图片右 */
-@property(nonatomic,copy) NSString *middle_img_u;
+@property(nonatomic,copy) NSString<Optional> *middle_img_u;
 /** 描述内容 */
-@property(nonatomic,copy) NSString *summary;
+@property(nonatomic,copy) NSString<Optional> *summary;
 
 
 
@@ -35,15 +35,15 @@
 
 
 /** 喜欢人数 */
-@property(nonatomic,copy) NSString *favor_cnt;
+@property(nonatomic,copy) NSString<Optional> *favor_cnt;
 /** 浏览人数 */
-@property(nonatomic,copy) NSString *view_cnt;
+@property(nonatomic,copy) NSString<Optional> *view_cnt;
 /** 留言人数 */
-@property(nonatomic,copy) NSString *comment_cnt;
+@property(nonatomic,copy) NSString<Optional> *comment_cnt;
 
 /** cell id */
-@property(nonatomic,copy) NSString *group_id;
+@property(nonatomic,copy) NSString<Optional> *group_id;
 /** 底部评论id */
-@property(nonatomic,copy) NSString *post_id;
+@property(nonatomic,copy) NSString<Optional> *post_id;
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "RecommandMessage.h"
+#import "CJTool.h"
+#import "NSArray+Extension.h"
 
 @implementation RecommandMessage
 
@@ -18,7 +20,7 @@
 }
 - (instancetype)initWithDict:(NSDictionary *)dict
 {
-    self = [super init];
+    self = [super initWithEntity:[NSEntityDescription entityForName:@"RecommandMessage" inManagedObjectContext:[CJTool sharedTool].context] insertIntoManagedObjectContext:[CJTool sharedTool].context];
     if (self ) {
         self.con = dict[@"city_micro"][@"info"][@"url"][@"con"];
         self.icon = dict[@"city_micro"][@"info"][@"icon"];
