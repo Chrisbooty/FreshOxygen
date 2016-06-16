@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CJRecommandCustomTableCell" rowHeight="182" id="KGk-i7-Jjw" customClass="CJRecommandCustomTableCell">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CJRecommandCustomTableCell" rowHeight="360" id="KGk-i7-Jjw" customClass="CJRecommandCustomTableCell">
             <rect key="frame" x="0.0" y="0.0" width="375" height="360"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -69,27 +69,39 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zeX-9J-AwF">
                                 <rect key="frame" x="182" y="0.0" width="177" height="177"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="fjp-ux-sN5"/>
+                                    <constraint firstAttribute="width" constant="177" id="gft-ox-Wa5"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="zeX-9J-AwF" firstAttribute="height" secondItem="ifd-ZC-RL7" secondAttribute="height" id="36P-21-rkL"/>
+                            <constraint firstItem="zeX-9J-AwF" firstAttribute="height" secondItem="ifd-ZC-RL7" secondAttribute="height" id="AyA-1x-OgY"/>
                             <constraint firstItem="ifd-ZC-RL7" firstAttribute="leading" secondItem="ZWx-0L-iPH" secondAttribute="leading" id="DxS-eb-dnL"/>
                             <constraint firstItem="ifd-ZC-RL7" firstAttribute="top" secondItem="ZWx-0L-iPH" secondAttribute="top" id="G6k-Ex-tZ8"/>
                             <constraint firstItem="zeX-9J-AwF" firstAttribute="leading" secondItem="ifd-ZC-RL7" secondAttribute="trailing" constant="4" id="ITJ-uX-y2e"/>
                             <constraint firstAttribute="bottom" secondItem="ifd-ZC-RL7" secondAttribute="bottom" id="OTY-MG-UYo"/>
                             <constraint firstAttribute="height" constant="177" id="U5e-Bp-KUI"/>
                             <constraint firstAttribute="bottom" secondItem="zeX-9J-AwF" secondAttribute="bottom" id="XZV-Zd-zC8"/>
+                            <constraint firstItem="zeX-9J-AwF" firstAttribute="width" secondItem="ifd-ZC-RL7" secondAttribute="width" id="gxf-1U-JJK"/>
                             <constraint firstAttribute="trailing" secondItem="zeX-9J-AwF" secondAttribute="trailing" id="kRB-kb-VZ1"/>
                             <constraint firstItem="zeX-9J-AwF" firstAttribute="top" secondItem="ZWx-0L-iPH" secondAttribute="top" id="y5y-he-tUy"/>
                             <constraint firstItem="zeX-9J-AwF" firstAttribute="width" secondItem="ifd-ZC-RL7" secondAttribute="width" id="z70-wG-jss"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gxf-1U-JJK"/>
+                                <exclude reference="z70-wG-jss"/>
+                            </mask>
+                        </variation>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8MF-Ya-6oe">
                         <rect key="frame" x="8" y="299" width="359" height="22"/>
                         <animations/>
-                        <color key="backgroundColor" red="0.30980392156862746" green="0.81176470588235294" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="22" id="Uog-am-Bjj"/>
                         </constraints>
@@ -104,7 +116,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="nhr-RL-ZFK"/>
                                 </constraints>
-                                <state key="normal" image="diary_see_14x14_"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" image="diary_see_14x14_">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLM-fN-19Y">
                                 <rect key="frame" x="120" y="0.0" width="119" height="28"/>
@@ -113,7 +128,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="xfD-JN-xv1"/>
                                 </constraints>
-                                <state key="normal" image="diary_common_14x14_"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" image="diary_common_14x14_">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDb-5S-ej5">
                                 <rect key="frame" x="240" y="0.0" width="119" height="28"/>
@@ -122,7 +140,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="ad8-jM-eci"/>
                                 </constraints>
-                                <state key="normal" image="diary_star_off_14x14_"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" image="diary_star_off_14x14_">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
                         <animations/>
@@ -139,13 +160,13 @@
                             <constraint firstItem="1rm-OR-6gJ" firstAttribute="leading" secondItem="4du-b6-Lcr" secondAttribute="leading" id="zzU-sJ-vnA"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ep-xO-TST">
-                        <rect key="frame" x="8" y="236" width="42" height="55"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ep-xO-TST">
+                        <rect key="frame" x="8" y="236" width="36" height="55"/>
                         <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="55" id="og2-fg-NUh"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>

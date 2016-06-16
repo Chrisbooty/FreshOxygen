@@ -66,6 +66,7 @@
                 UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(btnClick:)];
                 [btnview addGestureRecognizer:tap];
                 btnview.model = btnModel;
+                i++;
             }
         }
     }

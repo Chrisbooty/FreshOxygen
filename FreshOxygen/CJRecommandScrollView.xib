@@ -37,7 +37,7 @@
                                         <constraint firstAttribute="height" constant="30" id="xCP-DD-tfH"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
@@ -84,7 +84,7 @@
                                         <constraint firstAttribute="height" constant="30" id="3b3-wE-oYJ"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
@@ -128,7 +128,7 @@
                                         <constraint firstAttribute="height" constant="30" id="M1B-lq-LN7"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
@@ -172,7 +172,7 @@
                                         <constraint firstAttribute="height" constant="30" id="1Bt-SL-h1r"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
@@ -241,20 +241,24 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozo-cb-xZW">
-                            <rect key="frame" x="160" y="190" width="440" height="50"/>
+                            <rect key="frame" x="163" y="190" width="437" height="50"/>
                             <animations/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="yHy-LX-m0i"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="csW-tk-Xdu">
-                            <rect key="frame" x="152" y="199" width="2" height="33"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csW-tk-Xdu">
+                            <rect key="frame" x="151" y="199" width="2" height="33"/>
                             <animations/>
                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="2" id="llT-lX-Z85"/>
+                                <constraint firstAttribute="height" constant="33" id="wza-Xp-Wpe"/>
+                            </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsS-Z8-tep">
                             <rect key="frame" x="210" y="0.0" width="390" height="188"/>
@@ -282,11 +286,17 @@
                             </constraints>
                         </view>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gk3-P2-Li0">
-                            <rect key="frame" x="0.0" y="190" width="147" height="50"/>
+                            <rect key="frame" x="0.0" y="190" width="150" height="50"/>
                             <animations/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="8sw-Jc-A7D"/>
+                                <constraint firstAttribute="width" constant="120" id="ahk-dm-yQ7"/>
                             </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="ahk-dm-yQ7"/>
+                                </mask>
+                            </variation>
                         </imageView>
                     </subviews>
                     <animations/>
@@ -298,14 +308,23 @@
                         <constraint firstItem="ozo-cb-xZW" firstAttribute="width" secondItem="Gk3-P2-Li0" secondAttribute="height" multiplier="409:44" constant="-24.772727272727252" id="9Oa-gc-1PZ"/>
                         <constraint firstItem="ozo-cb-xZW" firstAttribute="leading" secondItem="Gk3-P2-Li0" secondAttribute="trailing" constant="13" id="CvJ-U6-9gM"/>
                         <constraint firstAttribute="bottom" secondItem="Gk3-P2-Li0" secondAttribute="bottom" id="IKl-8X-Mla"/>
+                        <constraint firstItem="Gk3-P2-Li0" firstAttribute="width" secondItem="XYd-RL-vHp" secondAttribute="width" constant="-50" id="Q3d-6e-FZt"/>
                         <constraint firstAttribute="trailing" secondItem="hsS-Z8-tep" secondAttribute="trailing" id="SlX-Xj-vWV"/>
                         <constraint firstItem="hsS-Z8-tep" firstAttribute="top" secondItem="1qN-W8-jN7" secondAttribute="top" id="X5r-I3-i2H"/>
                         <constraint firstItem="XYd-RL-vHp" firstAttribute="top" secondItem="1qN-W8-jN7" secondAttribute="top" id="Y1X-l3-Msw"/>
+                        <constraint firstItem="csW-tk-Xdu" firstAttribute="leading" secondItem="Gk3-P2-Li0" secondAttribute="trailing" constant="1" id="ZaK-0k-beo"/>
+                        <constraint firstAttribute="bottom" secondItem="csW-tk-Xdu" secondAttribute="bottom" constant="8" id="cpL-c5-jpk"/>
                         <constraint firstAttribute="bottom" secondItem="ozo-cb-xZW" secondAttribute="bottom" id="e6Q-uU-LF0"/>
                         <constraint firstItem="XYd-RL-vHp" firstAttribute="leading" secondItem="1qN-W8-jN7" secondAttribute="leading" id="elv-EH-xdk"/>
                         <constraint firstItem="hsS-Z8-tep" firstAttribute="height" secondItem="XYd-RL-vHp" secondAttribute="height" constant="6" id="heR-In-RyI"/>
                         <constraint firstItem="ozo-cb-xZW" firstAttribute="leading" secondItem="Gk3-P2-Li0" secondAttribute="trailing" constant="13" id="vIw-8y-Bys"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="9Oa-gc-1PZ"/>
+                            <exclude reference="vIw-8y-Bys"/>
+                        </mask>
+                    </variation>
                 </view>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nva-Em-0VX">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>

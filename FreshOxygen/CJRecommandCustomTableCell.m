@@ -77,8 +77,8 @@
     _textL.text = model.summary;
     
     //删除item
-    for (UIView *view in _labelView.subviews) {
-        [view removeFromSuperview];
+    for (UIButton *btn in _labelView.subviews) {
+        [btn removeFromSuperview];
     }
     //间隔
     CGFloat spacing = 15;
@@ -86,12 +86,12 @@
     for (NSInteger i = 0; i <model.item.count; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         NSString *str = [model.item[i] item_name];
-        CGSize strSize = [str sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13]}];
-        btn.frame = CGRectMake(btnWith +spacing *(i+1), 0, strSize.width, strSize.height);
+        CGSize strSize = [str sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12]}];
+        btn.frame = CGRectMake(btnWith +spacing *(i+1), 0, strSize.width +30, strSize.height);
         [btn setTitle: [model.item[i] item_name] forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor colorWithRed:79.0/255.0 green:207/255.0 blue:199/255.0 alpha:1.0] forState:UIControlStateNormal];
         btn.tag = 100+i;
-        btnWith = strSize.width;
+        btnWith = strSize.width +30;
         [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
         [_labelView addSubview:btn];
     }
