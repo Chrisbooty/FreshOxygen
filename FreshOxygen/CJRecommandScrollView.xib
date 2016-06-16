@@ -42,7 +42,7 @@
                                 </label>
                             </subviews>
                             <animations/>
-                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="vaH-87-3bj" firstAttribute="top" secondItem="voz-IN-Epn" secondAttribute="top" id="1eU-HU-3Ll"/>
                                 <constraint firstAttribute="bottom" secondItem="4zh-gV-7g0" secondAttribute="bottom" id="2Wz-3h-t34"/>
@@ -89,7 +89,7 @@
                                 </label>
                             </subviews>
                             <animations/>
-                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="Ipq-Fh-sGc" firstAttribute="top" secondItem="AEe-ex-nya" secondAttribute="top" id="4k6-Md-lnz"/>
                                 <constraint firstAttribute="trailing" secondItem="Ipq-Fh-sGc" secondAttribute="trailing" id="5sR-26-NEW"/>
@@ -133,7 +133,7 @@
                                 </label>
                             </subviews>
                             <animations/>
-                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="nL4-o9-dsh" firstAttribute="leading" secondItem="2Xb-5E-E99" secondAttribute="leading" id="2YP-E4-BPz"/>
                                 <constraint firstItem="nL4-o9-dsh" firstAttribute="top" secondItem="2Xb-5E-E99" secondAttribute="top" id="Jbe-xi-jgC"/>
@@ -177,7 +177,7 @@
                                 </label>
                             </subviews>
                             <animations/>
-                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="cXt-DU-aFi" firstAttribute="bottom" secondItem="XXb-n5-duj" secondAttribute="top" id="27j-4h-moD"/>
                                 <constraint firstAttribute="trailing" secondItem="XXb-n5-duj" secondAttribute="trailing" id="6q1-tC-Evc"/>
