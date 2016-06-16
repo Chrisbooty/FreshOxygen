@@ -33,25 +33,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self requestData];
-    CJRecommandScrollView *headerView = [[[NSBundle mainBundle] loadNibNamed:@"CJRecommandScrollView" owner:nil options:nil] lastObject];
-    headerView.scrollDataArrM = self.scrollDataArrM;
-    headerView.imagesDataArrM = self.imagesDataArrM;
-    headerView.btnDataArrM = self.btnDataArrM;
-    headerView.messageModel = self.messageModel;
-    self.tableView.tableHeaderView = headerView;
-    [self.tableView registerNib:[UINib nibWithNibName:@"CJRecommandCustomTableCell" bundle:nil] forCellReuseIdentifier:@"CJRecommandCustomTableCell"];
     
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"CJRecommandCustomTableCell" bundle:nil] forCellReuseIdentifier:@"CJRecommandCustomTableCell"];
+    [self requestData];
 
 }
 #pragma mark - 请求数据
 - (void)requestData
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    //设置请求方式
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", nil];
+    
     [manager GET:[NSString stringWithFormat:RECOMMAND_URL,self.count] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         //轮播图数据源
-        NSArray *scrollArr = responseObject[@"responseData"][@"banner"];
+        NSArray *scrollArr = responseObject[@"responseData"][@"banner"][@"child"];
         for (NSDictionary *dict in scrollArr) {
             RecommandScroll *scrollModel = [RecommandScroll recommandScrollWithDict:dict];
             [self.scrollDataArrM addObject:scrollModel];
@@ -76,11 +74,22 @@
             CJRecommandCellModel *model = [[CJRecommandCellModel alloc] initWithDictionary:dict error:nil];
             [self.cellDataArrM addObject:model];
         }
+        [self createTopView];
         [self.tableView reloadData];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        
+        CJLogStr(error);
     }];
+}
+
+- (void)createTopView
+{
+    CJRecommandScrollView *headerView = [[[NSBundle mainBundle] loadNibNamed:@"CJRecommandScrollView" owner:nil options:nil] lastObject];
+    headerView.scrollDataArrM = self.scrollDataArrM;
+    headerView.imagesDataArrM = self.imagesDataArrM;
+    headerView.btnDataArrM = self.btnDataArrM;
+    headerView.messageModel = self.messageModel;
+    self.tableView.tableHeaderView = headerView;
 }
 
 

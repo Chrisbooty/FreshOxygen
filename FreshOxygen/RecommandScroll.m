@@ -7,6 +7,8 @@
 //
 
 #import "RecommandScroll.h"
+#import "NSArray+Extension.h"
+#import "CJTool.h"
 
 @implementation RecommandScroll
 
@@ -18,9 +20,12 @@
 }
 - (instancetype)initWithDict:(NSDictionary *)dict
 {
-    self = [super init];
+    self = [super initWithEntity:self insertIntoManagedObjectContext:[CJTool sharedTool]];
     if (self) {
-        [self setValuesForKeysWithDictionary:dict];
+        NSArray *scrollProArr = [NSArray getProperties:[RecommandScroll class]];
+        for (NSString *key in scrollProArr) {
+            [self setValue:[dict valueForKey:key] forKey:key];
+        }
     }
     return self;
 }

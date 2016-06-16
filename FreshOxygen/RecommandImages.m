@@ -7,6 +7,7 @@
 //
 
 #import "RecommandImages.h"
+#import "NSArray+Extension.h"
 
 @implementation RecommandImages
 
@@ -20,7 +21,10 @@
 {
     self = [super init];
     if (self) {
-        [self setValuesForKeysWithDictionary:dict];
+        NSArray *scrollProArr = [NSArray getProperties:[RecommandImages class]];
+        for (NSString *key in scrollProArr) {
+            [self setValue:[dict valueForKey:key] forKey:key];
+        }
     }
     return self;
 }

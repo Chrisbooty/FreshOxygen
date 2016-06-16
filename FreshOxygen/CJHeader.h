@@ -10,10 +10,14 @@
 #define CJHeader_h
 
 
+#import "CJTool.h"
+
 #import <AFNetworking.h>
 #import <UIImageView+WebCache.h>
 #import <MJRefresh.h>
 #import <JSONModel.h>
+
+#import "NSArray+Extension.h"
 
 /**
  *  recommand 控制器
@@ -27,5 +31,9 @@
 #import "CJRecommandGOVTableCell.h"
 
 #define RECOMMAND_URL @"http://api.soyoung.com/v4/appindex?index=%ld&range=20&cityId=291&lver=6.3.8"
+
+
+
+#define CJLogStr(arg) NSLog(@"---> %@",arg)
 
 #endif /* CJHeader_h */
