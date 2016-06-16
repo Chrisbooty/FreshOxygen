@@ -24,6 +24,10 @@
 		0495E5F21D1253B0001D4E79 /* RecommandImages+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495E5EF1D1253B0001D4E79 /* RecommandImages+CoreDataProperties.m */; };
 		0495E5F31D1253B0001D4E79 /* RecommandImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495E5F11D1253B0001D4E79 /* RecommandImages.m */; };
 		0495E5F61D125439001D4E79 /* NSArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495E5F51D125439001D4E79 /* NSArray+Extension.m */; };
+		0495E5FB1D12CAAC001D4E79 /* CJDiscoverTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495E5FA1D12CAAC001D4E79 /* CJDiscoverTableController.m */; };
+		0495E6011D12CE09001D4E79 /* CJDiscoverHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495E6001D12CE09001D4E79 /* CJDiscoverHeaderModel.m */; };
+		0495E6051D12CE39001D4E79 /* CJDiscoverCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495E6041D12CE39001D4E79 /* CJDiscoverCellModel.m */; };
+		0495E6081D12D5FF001D4E79 /* CJDiscoverCellTagsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495E6071D12D5FF001D4E79 /* CJDiscoverCellTagsModel.m */; };
 		04DC87E11D1240FC003EE196 /* CJTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC87E01D1240FC003EE196 /* CJTool.m */; };
 		04F7A5021D10075B005CD321 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7A5011D10075B005CD321 /* main.m */; };
 		04F7A5051D10075B005CD321 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7A5041D10075B005CD321 /* AppDelegate.m */; };
@@ -81,6 +85,14 @@
 		0495E5F11D1253B0001D4E79 /* RecommandImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommandImages.m; sourceTree = "<group>"; };
 		0495E5F41D125439001D4E79 /* NSArray+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extension.h"; sourceTree = "<group>"; };
 		0495E5F51D125439001D4E79 /* NSArray+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extension.m"; sourceTree = "<group>"; };
+		0495E5F91D12CAAC001D4E79 /* CJDiscoverTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDiscoverTableController.h; sourceTree = "<group>"; };
+		0495E5FA1D12CAAC001D4E79 /* CJDiscoverTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDiscoverTableController.m; sourceTree = "<group>"; };
+		0495E5FF1D12CE09001D4E79 /* CJDiscoverHeaderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDiscoverHeaderModel.h; sourceTree = "<group>"; };
+		0495E6001D12CE09001D4E79 /* CJDiscoverHeaderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDiscoverHeaderModel.m; sourceTree = "<group>"; };
+		0495E6031D12CE39001D4E79 /* CJDiscoverCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDiscoverCellModel.h; sourceTree = "<group>"; };
+		0495E6041D12CE39001D4E79 /* CJDiscoverCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDiscoverCellModel.m; sourceTree = "<group>"; };
+		0495E6061D12D5FF001D4E79 /* CJDiscoverCellTagsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDiscoverCellTagsModel.h; sourceTree = "<group>"; };
+		0495E6071D12D5FF001D4E79 /* CJDiscoverCellTagsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDiscoverCellTagsModel.m; sourceTree = "<group>"; };
 		04DC87DF1D1240FC003EE196 /* CJTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTool.h; sourceTree = "<group>"; };
 		04DC87E01D1240FC003EE196 /* CJTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTool.m; sourceTree = "<group>"; };
 		04F7A4FD1D10075B005CD321 /* FreshOxygen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshOxygen.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -233,6 +245,51 @@
 			name = "首页推荐";
 			sourceTree = "<group>";
 		};
+		0495E5F81D12CA62001D4E79 /* 发现 */ = {
+			isa = PBXGroup;
+			children = (
+				0495E5F91D12CAAC001D4E79 /* CJDiscoverTableController.h */,
+				0495E5FA1D12CAAC001D4E79 /* CJDiscoverTableController.m */,
+			);
+			name = "发现";
+			sourceTree = "<group>";
+		};
+		0495E5FC1D12CAC7001D4E79 /* 发现 */ = {
+			isa = PBXGroup;
+			children = (
+				0495E5FE1D12CDE9001D4E79 /* 表头 */,
+				0495E6021D12CE14001D4E79 /* cell */,
+			);
+			name = "发现";
+			sourceTree = "<group>";
+		};
+		0495E5FD1D12CDC4001D4E79 /* 发现 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "发现";
+			sourceTree = "<group>";
+		};
+		0495E5FE1D12CDE9001D4E79 /* 表头 */ = {
+			isa = PBXGroup;
+			children = (
+				0495E5FF1D12CE09001D4E79 /* CJDiscoverHeaderModel.h */,
+				0495E6001D12CE09001D4E79 /* CJDiscoverHeaderModel.m */,
+			);
+			name = "表头";
+			sourceTree = "<group>";
+		};
+		0495E6021D12CE14001D4E79 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				0495E6031D12CE39001D4E79 /* CJDiscoverCellModel.h */,
+				0495E6041D12CE39001D4E79 /* CJDiscoverCellModel.m */,
+				0495E6061D12D5FF001D4E79 /* CJDiscoverCellTagsModel.h */,
+				0495E6071D12D5FF001D4E79 /* CJDiscoverCellTagsModel.m */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
 		04F7A4F41D10075A005CD321 = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				0411446D1D115517008A57DB /* 推荐 */,
+				0495E5FD1D12CDC4001D4E79 /* 发现 */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -310,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				0495E5F71D12A75B001D4E79 /* 首页推荐 */,
+				0495E5F81D12CA62001D4E79 /* 发现 */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -319,6 +378,7 @@
 			children = (
 				0411443A1D113057008A57DB /* CoreData */,
 				041144661D114039008A57DB /* 推荐首页 */,
+				0495E5FC1D12CAC7001D4E79 /* 发现 */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -517,13 +577,17 @@
 			files = (
 				04F7A5081D10075B005CD321 /* ViewController.m in Sources */,
 				04F7A5051D10075B005CD321 /* AppDelegate.m in Sources */,
+				0495E6051D12CE39001D4E79 /* CJDiscoverCellModel.m in Sources */,
+				0495E6011D12CE09001D4E79 /* CJDiscoverHeaderModel.m in Sources */,
 				04114C291D11896C008A57DB /* CJRecommandBtnView.m in Sources */,
 				04F7A50E1D10075B005CD321 /* FreshOxygen.xcdatamodeld in Sources */,
 				04DC87E11D1240FC003EE196 /* CJTool.m in Sources */,
 				04F7A5021D10075B005CD321 /* main.m in Sources */,
+				0495E6081D12D5FF001D4E79 /* CJDiscoverCellTagsModel.m in Sources */,
 				0495E5F61D125439001D4E79 /* NSArray+Extension.m in Sources */,
 				041144691D114062008A57DB /* CJRecommandCellModel.m in Sources */,
 				0411446C1D114D62008A57DB /* CJRecommandSurgeryModel.m in Sources */,
+				0495E5FB1D12CAAC001D4E79 /* CJDiscoverTableController.m in Sources */,
 				041144631D11372A008A57DB /* RecommandMessage.m in Sources */,
 				0411445F1D11372A008A57DB /* RecommandBtn.m in Sources */,
 				041144641D11372A008A57DB /* RecommandScroll+CoreDataProperties.m in Sources */,
