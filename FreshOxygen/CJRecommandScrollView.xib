@@ -13,12 +13,21 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nva-Em-0VX">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Oha-Ex-RWz"/>
+                    </constraints>
+                </scrollView>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="pFQ-5T-LbO">
                     <rect key="frame" x="280" y="153" width="39" height="37"/>
                     <animations/>
                     <constraints>
                         <constraint firstAttribute="height" constant="37" id="QtF-bL-OND"/>
                     </constraints>
+                    <color key="pageIndicatorTintColor" red="0.30196078430000001" green="0.85098039219999999" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </pageControl>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cih-Iv-CCk">
                     <rect key="frame" x="0.0" y="200" width="600" height="150"/>
@@ -326,13 +335,6 @@
                         </mask>
                     </variation>
                 </view>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nva-Em-0VX">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
-                    <animations/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="200" id="Oha-Ex-RWz"/>
-                    </constraints>
-                </scrollView>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

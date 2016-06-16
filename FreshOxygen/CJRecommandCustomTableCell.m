@@ -8,6 +8,7 @@
 
 #import "CJRecommandCustomTableCell.h"
 #import <UIImageView+WebCache.h>
+#import "CJHeader.h"
 
 @interface CJRecommandCustomTableCell ()
 /**
@@ -74,24 +75,66 @@
     _attentionL.text = @"关注";
     [_imgLeftView sd_setImageWithURL:[NSURL URLWithString:model.top_img_u] placeholderImage:[UIImage imageNamed:@"photo"]];
     [_imgRightView sd_setImageWithURL:[NSURL URLWithString:model.middle_img_u] placeholderImage:[UIImage imageNamed:@"photo"]];
-    _textL.text = model.summary;
+    
+    //判断是否为富文本
+    
+    static NSMutableAttributedString *attri;
+    attri = NULL;
+    NSArray *arr = [model.summary componentsSeparatedByString:@"]"];
+    if (arr.count <= 1) {
+        _textL.text = model.summary;
+    }else
+    {
+        [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            NSString *objString = (NSString *)obj;
+            
+            NSArray *strArr = [objString componentsSeparatedByString:@"[:"];
+            // 创建一个富文本
+            if (attri == nil) {
+                attri = [[NSMutableAttributedString alloc] initWithString:strArr[0]];
+            }
+            NSTextAttachment *attch = [[NSTextAttachment alloc] init];
+            if ([objString containsString:@"[:"]) {
+                attch.image = [UIImage imageNamed:[NSString stringWithFormat:@"face%d_24x24_",[strArr.lastObject intValue]]];
+            }
+            // 创建带有图片的富文本
+            NSAttributedString *string;
+            if (strArr.count > 1) {
+                string = [NSAttributedString attributedStringWithAttachment:attch];
+            }else
+            {
+                string = [[NSAttributedString alloc] initWithString:strArr.lastObject];
+            }
+            
+            [attri appendAttributedString:string];
+        }];
+        _textL.attributedText = attri;
+    }
+    
+    
+    
+    
+    
     
     //删除item
     for (UIButton *btn in _labelView.subviews) {
-        [btn removeFromSuperview];
+        if ([btn isKindOfClass:[UIButton class]]) {
+            [btn removeFromSuperview];
+        }
     }
     //间隔
-    CGFloat spacing = 15;
+    CGFloat spacing = 5;
     CGFloat btnWith = 0;
     for (NSInteger i = 0; i <model.item.count; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         NSString *str = [model.item[i] item_name];
         CGSize strSize = [str sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12]}];
-        btn.frame = CGRectMake(btnWith +spacing *(i+1), 0, strSize.width +30, strSize.height);
-        [btn setTitle: [model.item[i] item_name] forState:UIControlStateNormal];
+        btn.frame = CGRectMake(btnWith +spacing, 0, strSize.width, strSize.height);
+        [btn setTitle: str forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor colorWithRed:79.0/255.0 green:207/255.0 blue:199/255.0 alpha:1.0] forState:UIControlStateNormal];
+        btn.titleLabel.font = [UIFont systemFontOfSize:12];
         btn.tag = 100+i;
-        btnWith = strSize.width +30;
+        btnWith = strSize.width + btn.frame.origin.x;
         [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
         [_labelView addSubview:btn];
     }
