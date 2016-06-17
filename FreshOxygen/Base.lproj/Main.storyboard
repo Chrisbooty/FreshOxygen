@@ -78,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="1050" y="232"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Discover Table Controller-->
         <scene sceneID="GK2-Xj-8zh">
             <objects>
-                <tableViewController id="sHW-cF-Mj8" sceneMemberID="viewController">
+                <tableViewController id="sHW-cF-Mj8" customClass="CJDiscoverTableController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Obi-az-FMv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

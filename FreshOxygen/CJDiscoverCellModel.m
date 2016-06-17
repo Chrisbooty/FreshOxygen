@@ -10,4 +10,9 @@
 
 @implementation CJDiscoverCellModel
 
++ (JSONKeyMapper *)keyMapper
+{
+    return [[JSONKeyMapper alloc] initWithDictionary:@{@"user.user_name":@"user_name",@"user.avatar.u":@"title_u"}];
+}
+
 @end

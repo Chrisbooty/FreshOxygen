@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CJDiscoverHeaderModel.h"
 
 @interface CJDiscoverHeaderCategoryView : UIView
+
+/** model */
+@property(nonatomic,strong) CJDiscoverHeaderModel *model;
 
 @end

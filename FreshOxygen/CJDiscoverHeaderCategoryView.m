@@ -7,6 +7,7 @@
 //
 
 #import "CJDiscoverHeaderCategoryView.h"
+#import <UIImageView+WebCache.h>
 
 @interface CJDiscoverHeaderCategoryView ()
 
@@ -17,6 +18,21 @@
 @end
 
 @implementation CJDiscoverHeaderCategoryView
+
+-(void)awakeFromNib
+{
+    _imgView.layer.cornerRadius = 50.0f;
+    _imgView.clipsToBounds = YES;
+}
+
+
+- (void)setModel:(CJDiscoverHeaderModel *)model
+{
+    _model = model;
+    [_imgView sd_setImageWithURL:[NSURL URLWithString:model.img_url] placeholderImage:[UIImage imageNamed:@"photo"]];
+    _txtL.text = model.title;
+}
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

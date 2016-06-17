@@ -64,6 +64,12 @@
     // Initialization code
     _iconView.layer.cornerRadius = 17.0f;
     _iconView.clipsToBounds = YES;
+    //删除item
+    for (UIButton *btn in _labelView.subviews) {
+        if ([btn isKindOfClass:[UIButton class]]) {
+            [btn removeFromSuperview];
+        }
+    }
 }
 
 - (void)setModel:(CJRecommandCellModel *)model
@@ -109,13 +115,6 @@
             [attri appendAttributedString:string];
         }];
         _textL.attributedText = attri;
-    }
-
-    //删除item
-    for (UIButton *btn in _labelView.subviews) {
-        if ([btn isKindOfClass:[UIButton class]]) {
-            [btn removeFromSuperview];
-        }
     }
     //间隔
     CGFloat spacing = 5;

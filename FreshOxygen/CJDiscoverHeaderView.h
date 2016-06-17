@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CJDiscoverHeaderModel.h"
+
 
 @interface CJDiscoverHeaderView : UIView
 

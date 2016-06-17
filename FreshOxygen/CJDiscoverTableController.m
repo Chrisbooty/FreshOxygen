@@ -11,6 +11,7 @@
 #import "CJDiscoverCellTableCell.h"
 #import "CJDiscoverHeaderView.h"
 #import "CJDiscoverTableHeaderView.h"
+#import "CJDiscoverHeaderModel.h"
 
 @interface CJDiscoverTableController ()
 
@@ -58,7 +59,7 @@
             [self createHeaderView];
         }
         //cell 数据源
-        NSArray *cellArr = responseObject[@"responseData"][@"data"];
+        NSArray *cellArr = responseObject[@"responseData"][@"data"][@"list"];
         for (NSDictionary *dict in cellArr) {
             CJDiscoverCellModel *model = [[CJDiscoverCellModel alloc] initWithDictionary:dict error:nil];
             if (model != nil) {

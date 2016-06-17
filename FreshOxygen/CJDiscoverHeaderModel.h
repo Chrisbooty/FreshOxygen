@@ -16,8 +16,7 @@
 @property(nonatomic,copy) NSString *title;
 /** 图片地址 */
 @property(nonatomic,copy) NSString *img_url;
-/** 用户id */
-@property(nonatomic,copy) NSString *uid;
+
 
 
 
