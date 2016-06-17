@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CJDiscoverHeaderCategoryView">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="128"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e1S-ED-iQB">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="dti-gW-A08"/>
+                        <constraint firstAttribute="height" constant="100" id="uUa-8x-8Ya"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTy-0F-fS2">
+                    <rect key="frame" x="0.0" y="99" width="100" height="29"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="upM-fr-FG6"/>
+                        <constraint firstAttribute="height" constant="29" id="zdg-Zf-tPQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="e1S-ED-iQB" secondAttribute="bottom" constant="28" id="6k6-RV-1gv"/>
+                <constraint firstItem="e1S-ED-iQB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7PC-ga-1jl"/>
+                <constraint firstItem="e1S-ED-iQB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Hr7-WV-v7I"/>
+                <constraint firstAttribute="trailing" secondItem="e1S-ED-iQB" secondAttribute="trailing" id="QMw-Et-Pch"/>
+                <constraint firstAttribute="trailing" secondItem="xTy-0F-fS2" secondAttribute="trailing" id="Zk3-8N-HGV"/>
+                <constraint firstItem="xTy-0F-fS2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hxG-6T-Iyi"/>
+                <constraint firstItem="xTy-0F-fS2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="99" id="lv6-L9-kEs"/>
+                <constraint firstAttribute="bottom" secondItem="xTy-0F-fS2" secondAttribute="bottom" id="o1t-mi-cfF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgView" destination="e1S-ED-iQB" id="O0l-pb-Fes"/>
+                <outlet property="txtL" destination="xTy-0F-fS2" id="Vf8-6u-mMn"/>
+            </connections>
+            <point key="canvasLocation" x="239" y="256"/>
+        </view>
+    </objects>
+</document>

@@ -28,6 +28,14 @@
 		0495E6011D12CE09001D4E79 /* CJDiscoverHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495E6001D12CE09001D4E79 /* CJDiscoverHeaderModel.m */; };
 		0495E6051D12CE39001D4E79 /* CJDiscoverCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495E6041D12CE39001D4E79 /* CJDiscoverCellModel.m */; };
 		0495E6081D12D5FF001D4E79 /* CJDiscoverCellTagsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495E6071D12D5FF001D4E79 /* CJDiscoverCellTagsModel.m */; };
+		04D100D51D13A6BD009D223E /* CJDiscoverHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D100D41D13A6BD009D223E /* CJDiscoverHeaderView.m */; };
+		04D100D71D13A6D2009D223E /* CJDiscoverHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D100D61D13A6D2009D223E /* CJDiscoverHeaderView.xib */; };
+		04D100DB1D13AC43009D223E /* CJDiscoverTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D100DA1D13AC43009D223E /* CJDiscoverTableHeaderView.m */; };
+		04D100DD1D13AC5A009D223E /* CJDiscoverTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D100DC1D13AC5A009D223E /* CJDiscoverTableHeaderView.xib */; };
+		04D100E21D13B962009D223E /* CJDiscoverCellTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D100E01D13B962009D223E /* CJDiscoverCellTableCell.m */; };
+		04D100E31D13B962009D223E /* CJDiscoverCellTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D100E11D13B962009D223E /* CJDiscoverCellTableCell.xib */; };
+		04D100E61D13C081009D223E /* CJDiscoverHeaderCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D100E51D13C081009D223E /* CJDiscoverHeaderCategoryView.m */; };
+		04D100E81D13C093009D223E /* CJDiscoverHeaderCategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D100E71D13C093009D223E /* CJDiscoverHeaderCategoryView.xib */; };
 		04DC87E11D1240FC003EE196 /* CJTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC87E01D1240FC003EE196 /* CJTool.m */; };
 		04F7A5021D10075B005CD321 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7A5011D10075B005CD321 /* main.m */; };
 		04F7A5051D10075B005CD321 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F7A5041D10075B005CD321 /* AppDelegate.m */; };
@@ -93,6 +101,18 @@
 		0495E6041D12CE39001D4E79 /* CJDiscoverCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDiscoverCellModel.m; sourceTree = "<group>"; };
 		0495E6061D12D5FF001D4E79 /* CJDiscoverCellTagsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDiscoverCellTagsModel.h; sourceTree = "<group>"; };
 		0495E6071D12D5FF001D4E79 /* CJDiscoverCellTagsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDiscoverCellTagsModel.m; sourceTree = "<group>"; };
+		04D100D31D13A6BD009D223E /* CJDiscoverHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDiscoverHeaderView.h; sourceTree = "<group>"; };
+		04D100D41D13A6BD009D223E /* CJDiscoverHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDiscoverHeaderView.m; sourceTree = "<group>"; };
+		04D100D61D13A6D2009D223E /* CJDiscoverHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CJDiscoverHeaderView.xib; sourceTree = "<group>"; };
+		04D100D91D13AC43009D223E /* CJDiscoverTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDiscoverTableHeaderView.h; sourceTree = "<group>"; };
+		04D100DA1D13AC43009D223E /* CJDiscoverTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDiscoverTableHeaderView.m; sourceTree = "<group>"; };
+		04D100DC1D13AC5A009D223E /* CJDiscoverTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CJDiscoverTableHeaderView.xib; sourceTree = "<group>"; };
+		04D100DF1D13B962009D223E /* CJDiscoverCellTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDiscoverCellTableCell.h; sourceTree = "<group>"; };
+		04D100E01D13B962009D223E /* CJDiscoverCellTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDiscoverCellTableCell.m; sourceTree = "<group>"; };
+		04D100E11D13B962009D223E /* CJDiscoverCellTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CJDiscoverCellTableCell.xib; sourceTree = "<group>"; };
+		04D100E41D13C081009D223E /* CJDiscoverHeaderCategoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDiscoverHeaderCategoryView.h; sourceTree = "<group>"; };
+		04D100E51D13C081009D223E /* CJDiscoverHeaderCategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDiscoverHeaderCategoryView.m; sourceTree = "<group>"; };
+		04D100E71D13C093009D223E /* CJDiscoverHeaderCategoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CJDiscoverHeaderCategoryView.xib; sourceTree = "<group>"; };
 		04DC87DF1D1240FC003EE196 /* CJTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTool.h; sourceTree = "<group>"; };
 		04DC87E01D1240FC003EE196 /* CJTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTool.m; sourceTree = "<group>"; };
 		04F7A4FD1D10075B005CD321 /* FreshOxygen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshOxygen.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -266,6 +286,9 @@
 		0495E5FD1D12CDC4001D4E79 /* 发现 */ = {
 			isa = PBXGroup;
 			children = (
+				04D100D21D13A690009D223E /* 表头 */,
+				04D100D81D13ABFF009D223E /* 段头 */,
+				04D100DE1D13B938009D223E /* cell */,
 			);
 			name = "发现";
 			sourceTree = "<group>";
@@ -286,6 +309,39 @@
 				0495E6041D12CE39001D4E79 /* CJDiscoverCellModel.m */,
 				0495E6061D12D5FF001D4E79 /* CJDiscoverCellTagsModel.h */,
 				0495E6071D12D5FF001D4E79 /* CJDiscoverCellTagsModel.m */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		04D100D21D13A690009D223E /* 表头 */ = {
+			isa = PBXGroup;
+			children = (
+				04D100D31D13A6BD009D223E /* CJDiscoverHeaderView.h */,
+				04D100D41D13A6BD009D223E /* CJDiscoverHeaderView.m */,
+				04D100D61D13A6D2009D223E /* CJDiscoverHeaderView.xib */,
+				04D100E41D13C081009D223E /* CJDiscoverHeaderCategoryView.h */,
+				04D100E51D13C081009D223E /* CJDiscoverHeaderCategoryView.m */,
+				04D100E71D13C093009D223E /* CJDiscoverHeaderCategoryView.xib */,
+			);
+			name = "表头";
+			sourceTree = "<group>";
+		};
+		04D100D81D13ABFF009D223E /* 段头 */ = {
+			isa = PBXGroup;
+			children = (
+				04D100D91D13AC43009D223E /* CJDiscoverTableHeaderView.h */,
+				04D100DA1D13AC43009D223E /* CJDiscoverTableHeaderView.m */,
+				04D100DC1D13AC5A009D223E /* CJDiscoverTableHeaderView.xib */,
+			);
+			name = "段头";
+			sourceTree = "<group>";
+		};
+		04D100DE1D13B938009D223E /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				04D100DF1D13B962009D223E /* CJDiscoverCellTableCell.h */,
+				04D100E01D13B962009D223E /* CJDiscoverCellTableCell.m */,
+				04D100E11D13B962009D223E /* CJDiscoverCellTableCell.xib */,
 			);
 			name = cell;
 			sourceTree = "<group>";
@@ -504,7 +560,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0411447D1D117056008A57DB /* photo.png in Resources */,
+				04D100E81D13C093009D223E /* CJDiscoverHeaderCategoryView.xib in Resources */,
+				04D100DD1D13AC5A009D223E /* CJDiscoverTableHeaderView.xib in Resources */,
+				04D100D71D13A6D2009D223E /* CJDiscoverHeaderView.xib in Resources */,
 				041144761D1156C9008A57DB /* CJRecommandCustomTableCell.xib in Resources */,
+				04D100E31D13B962009D223E /* CJDiscoverCellTableCell.xib in Resources */,
 				0411447B1D115717008A57DB /* CJRecommandGOVTableCell.xib in Resources */,
 				04F7A5131D10075B005CD321 /* LaunchScreen.storyboard in Resources */,
 				04F7A5101D10075B005CD321 /* Assets.xcassets in Resources */,
@@ -582,6 +642,7 @@
 				04114C291D11896C008A57DB /* CJRecommandBtnView.m in Sources */,
 				04F7A50E1D10075B005CD321 /* FreshOxygen.xcdatamodeld in Sources */,
 				04DC87E11D1240FC003EE196 /* CJTool.m in Sources */,
+				04D100E61D13C081009D223E /* CJDiscoverHeaderCategoryView.m in Sources */,
 				04F7A5021D10075B005CD321 /* main.m in Sources */,
 				0495E6081D12D5FF001D4E79 /* CJDiscoverCellTagsModel.m in Sources */,
 				0495E5F61D125439001D4E79 /* NSArray+Extension.m in Sources */,
@@ -591,6 +652,8 @@
 				041144631D11372A008A57DB /* RecommandMessage.m in Sources */,
 				0411445F1D11372A008A57DB /* RecommandBtn.m in Sources */,
 				041144641D11372A008A57DB /* RecommandScroll+CoreDataProperties.m in Sources */,
+				04D100E21D13B962009D223E /* CJDiscoverCellTableCell.m in Sources */,
+				04D100DB1D13AC43009D223E /* CJDiscoverTableHeaderView.m in Sources */,
 				041144651D11372A008A57DB /* RecommandScroll.m in Sources */,
 				041144621D11372A008A57DB /* RecommandMessage+CoreDataProperties.m in Sources */,
 				0411447A1D115717008A57DB /* CJRecommandGOVTableCell.m in Sources */,
@@ -598,6 +661,7 @@
 				0495E5F31D1253B0001D4E79 /* RecommandImages.m in Sources */,
 				041144751D1156C9008A57DB /* CJRecommandCustomTableCell.m in Sources */,
 				0495E5F21D1253B0001D4E79 /* RecommandImages+CoreDataProperties.m in Sources */,
+				04D100D51D13A6BD009D223E /* CJDiscoverHeaderView.m in Sources */,
 				0411445E1D11372A008A57DB /* RecommandBtn+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

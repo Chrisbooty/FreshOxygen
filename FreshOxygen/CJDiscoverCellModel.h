@@ -7,6 +7,7 @@
 //
 
 #import <JSONModel/JSONModel.h>
+#import "CJDiscoverCellTagsModel.h"
 
 @interface CJDiscoverCellModel : JSONModel
 
@@ -25,7 +26,7 @@
 /** 图片数组 - u */
 @property(nonatomic,strong) NSArray *imgs;
 /** 标签数组 */
-@property(nonatomic,strong) NSArray *tags;
+@property(nonatomic,strong) NSArray<CJDiscoverCellTagsModel> *tags;
 /** 浏览人数 */
 @property(nonatomic,copy) NSString *view_cnt;
 /** 留言数 */

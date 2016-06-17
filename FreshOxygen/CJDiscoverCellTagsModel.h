@@ -8,6 +8,10 @@
 
 #import <JSONModel/JSONModel.h>
 
+@protocol CJDiscoverCellTagsModel
+
+@end
+
 @interface CJDiscoverCellTagsModel : JSONModel
 
 /** 标签名 */

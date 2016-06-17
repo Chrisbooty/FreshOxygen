@@ -19,6 +19,8 @@
 
 #import "NSArray+Extension.h"
 
+
+
 /**
  *  recommand 控制器
  */
@@ -30,10 +32,24 @@
 #import "CJRecommandCustomTableCell.h"
 #import "CJRecommandGOVTableCell.h"
 
+/**
+ *  推荐首页URL
+ */
 #define RECOMMAND_URL @"http://api.soyoung.com/v4/appindex?index=%ld&range=20&cityId=291&lver=6.3.8"
+/**
+ *  发现 URL
+ */
+#define DISCOVER_URL @"http://api.soyoung.com/v8/teams/NewTeamIndex?uid=0&index=%ld&range=10&cityId=291&show=%ld"
 
 
 
 #define CJLogStr(arg) NSLog(@"---> %@",arg)
+
+/**
+ *  屏幕尺寸
+ */
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+
 
 #endif /* CJHeader_h */
